@@ -46,7 +46,11 @@ fun MainScreen(modifier: Modifier = Modifier) {
         )
         Text(
             text = "Small Text",
-            modifier = Modifier.alignByBaseline(),
+            modifier = Modifier.paddingFrom(
+                alignmentLine = FirstBaseline,
+                before = 80.dp,
+                after = 0.dp
+            ),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold
         )
