@@ -1,5 +1,6 @@
 package com.example.rowcoldemo
 
+import androidx.compose.ui.layout.FirstBaseline
 import androidx.compose.ui.layout.LastBaseline
 import androidx.compose.ui.Alignment
 import android.os.Bundle
@@ -39,7 +40,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
     Row(modifier = modifier) {
         Text(
             text = "Large Text\n\nMore Text",
-            modifier = Modifier.alignBy(LastBaseline),
+            modifier = Modifier.alignBy(FirstBaseline),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
